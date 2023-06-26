@@ -15,9 +15,9 @@ use App\Http\Controllers\TrainController;
 */
 
 /* route page */
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
 });
-
+ */
 /* train controller */
-Route::resource( '/trains', TrainController::class );
+Route::resource( '/', TrainController::class );
