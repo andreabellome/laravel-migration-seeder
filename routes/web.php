@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TrainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/* Route::get('/', function () {
+/* route page */
+Route::get('/', function () {
     return view('welcome');
-}); */
+});
 
+/* train controller */
 Route::resource( '/trains', TrainController::class );
