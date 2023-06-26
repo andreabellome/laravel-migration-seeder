@@ -19,5 +19,6 @@ use App\Http\Controllers\TrainController;
     return view('welcome');
 });
  */
+
 /* train controller */
 Route::resource( '/', TrainController::class );
